@@ -10,7 +10,7 @@ function App() {
     <div>
       <Navbar /> 
       
-      <nav>
+      {/* <nav>
         <ul>
           <li>
             <Link to="/">Home</Link>
@@ -22,7 +22,7 @@ function App() {
             <Link to="/contact">Contact</Link>
           </li>
         </ul>
-      </nav>
+      </nav> */}
 
       <Routes>
         <Route path="/" element={<Home />} />
