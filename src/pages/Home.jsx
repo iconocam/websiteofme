@@ -5,16 +5,45 @@ import { HiOutlineSparkles } from 'react-icons/hi'; // Heroicons Sparkles icon
 import { IoRocketSharp } from 'react-icons/io5'; // Ionicons Rocket icon
 import { AiOutlineSmile } from 'react-icons/ai'; // Ant Design Smile icon
 import { BsCodeSlash } from 'react-icons/bs'; // Bootstrap Code icon
+
+
 const Home = () => {
   return (
-    <div className="bg-gradient-to-br from-purple-300 to-blue-800 min-h-screen">
+    <div className="bg-gradient-to-br from-blue-300 to-pink-800 min-h-screen">
+
       {/* Header Section */}
-      <header className="py-8 px-6bg-opacity-80 ">
-        <div className="max-w-4xl mx-auto">
-          <h1 className="text-5xl font-extrabold text-gray-800 mb-6 border-b-4 border-gray-800 inline-block bounce-rotate-glow">
-            Cam          </h1>
+      <header className="py-8 px-6 bg-opacity-80 flex flex-col items-center space-y-4">
+    
+        <div className="relative">
+          <div className="bg-white p-16 rounded-full shadow-lg flex items-center justify-center">
+            <div className="bg-gray-800 p-4 rounded-full text-white animate-eyeball">
+              
+            </div>
+          </div>
+        </div>
+        <div className="flex space-x-4">
+          
+          <div className="bg-white p-4 rounded-lg shadow-lg">
+            <p className="text-black text-center">Panoptic Eyeball</p>
+          </div>
         </div>
       </header>
+
+      <style jsx>{`
+  .animate-eyeball {
+    animation: eyeballAnimation 2s infinite alternate;
+     box-shadow: 0 0 10px 5px rgba(0, 0, 255, 0.5);
+  }
+
+  @keyframes eyeballAnimation {
+    0% {
+      transform: translate(-60%, 30%);
+    }
+    100% {
+      transform: translate(50%, 30%);
+    }
+  }
+`}</style>
 
       {/* First Section */}
       <section className="py-7 px-6 mt-8">
@@ -27,7 +56,7 @@ const Home = () => {
       </section>
 
       {/* Second Section */}
-      <section className="py-7 px-6  mt-8">
+      <section className="py-7 px-6 mt-8">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-2xl font-bold text-gray-800 mb-4 rotate-in">Experience and Learning <HiOutlineSparkles className="text-blue-500 ml-2" size={24} /></h2>
           <p className="text-lg text-gray-700">
